@@ -1,0 +1,66 @@
+/* Main container */
+.lab-results-container {
+	width: 100%;
+	max-width: 350px;
+	margin: 1rem 0;
+	border: 1px solid #e0e0e0;
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: #fff;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.lab-results-title {
+	font-size: 1.2rem;
+	padding: 1rem;
+	border-bottom: 1px solid #e0e0e0;
+	font-weight: bold;
+	color: #2d2f31;
+}
+
+/* List container with vertical scroll */
+.lab-results-list {
+	max-height: 250px;
+	overflow-y: auto;
+}
+
+/* Individual item */
+.lab-result-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.75rem 1rem;
+	font-size: 1rem;
+	color: #4a4a4a;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+/* Hover effect */
+.lab-result-item:hover {
+	background-color: #f9f9f9;
+	cursor: pointer;
+}
+
+/* Download Icon */
+.download-icon {
+	font-size: 1.2rem;
+	color: #2d8cf0;
+}
+
+/* Make responsive */
+@media (max-width: 768px) {
+	.lab-results-container {
+		width: 90%;
+	}
+}
+
+@media (max-width: 480px) {
+	.lab-result-item {
+		font-size: 0.9rem;
+	}
+
+	.download-icon {
+		font-size: 1rem;
+	}
+}

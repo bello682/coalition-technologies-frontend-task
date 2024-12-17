@@ -1,0 +1,164 @@
+.header_container {
+	width: 100%;
+	display: flex;
+}
+
+.header_sec_container {
+	width: 90%;
+	display: flex;
+	margin: auto;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 50px;
+	padding: 20px;
+	border: 2px solid white;
+	box-shadow: 0 4px 8px rgba(42, 41, 41, 0.2);
+}
+
+.image_logo {
+	width: 250px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.img_logo {
+	width: 100%;
+	object-fit: contain;
+	cursor: pointer;
+}
+
+.header-links-button {
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header_links .header_ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+}
+
+.header_links .header_ul li {
+	font-weight: 700;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	cursor: pointer;
+	display: flex;
+	gap: 5px;
+	align-items: center;
+}
+
+.header_button {
+	display: flex;
+	gap: 10px;
+}
+
+.general_images {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.general_images img {
+	width: 50px;
+	object-fit: contain;
+}
+
+.text_practitioner {
+	display: block;
+}
+
+.text_practitioner h2 {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+
+.header_button .header_btn {
+	font-size: 25px;
+	font-weight: bolder;
+}
+
+.active {
+	background: var(--color-primary);
+	color: white;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 50px;
+}
+
+.hamburger {
+	display: none;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+	.image_logo {
+		width: 180px;
+		margin-right: 20px;
+		cursor: pointer;
+	}
+
+	.header-links-button {
+		position: absolute;
+		top: 80px;
+		right: 0;
+		width: 100%;
+		height: 100ch;
+		background-color: #fff;
+		flex-direction: column;
+		align-items: center;
+		padding: 15px 0;
+		display: none;
+		z-index: 1000;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	}
+
+	.header-links-button.active-menu {
+		display: flex;
+		justify-content: flex-start;
+		margin-top: 1rem;
+	}
+
+	.header_ul {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.header_btn {
+		padding: 40px 0px;
+	}
+
+	.hamburger {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.header-links-button {
+		gap: 1rem;
+	}
+
+	.header_links .header_ul {
+		font-size: 10px;
+		gap: 20px;
+	}
+
+	.image_logo {
+		width: 300px;
+		margin-right: 20px;
+		cursor: pointer;
+	}
+
+	.header_container {
+		padding-top: 1rem;
+	}
+}
