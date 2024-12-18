@@ -44,7 +44,7 @@ export default function MainExportContainer() {
 				</div>
 
 				{/* User Info */}
-				<div className="w-[70%]">
+				<div className="w-[75%]">
 					{selectedUser && <Content userInfo={selectedUser} />}
 				</div>
 			</div>

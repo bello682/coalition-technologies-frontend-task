@@ -7,7 +7,7 @@ const Sidebar = ({ users, onUserSelect, selectedUserId }) => {
 	const [openSearchInput, setOpenSearchInput] = useState(false);
 
 	const toggleSearchInput = () => {
-		setOpenSearchInput(!searchInput);
+		setOpenSearchInput((prevState) => !prevState);
 	};
 
 	const filterInput = (query) => {
@@ -32,7 +32,7 @@ const Sidebar = ({ users, onUserSelect, selectedUserId }) => {
 						type="text"
 						placeholder="Search for patients..."
 						onChange={handleSearchChange}
-						className="search_input"
+						className={`search_input ${openSearchInput ? "open" : ""}`}
 						value={searchInput}
 					/>
 				)}
