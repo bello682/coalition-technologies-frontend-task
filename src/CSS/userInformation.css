@@ -47,6 +47,7 @@
 .content_container::-webkit-scrollbar {
 	width: 2px;
 	height: 4px;
+	z-index: 9999;
 }
 
 .content_container::-webkit-scrollbar-thumb {
