@@ -6,11 +6,11 @@
 .header_sec_container {
 	width: 90%;
 	display: flex;
-	margin: auto;
+	margin: 10px auto;
 	justify-content: space-between;
 	align-items: center;
 	border-radius: 50px;
-	padding: 20px;
+	padding: 15px 20px;
 	border: 2px solid white;
 	box-shadow: 0 4px 8px rgba(42, 41, 41, 0.2);
 }
