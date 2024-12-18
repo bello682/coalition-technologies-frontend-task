@@ -46,7 +46,7 @@
 
 .content_container::-webkit-scrollbar {
 	width: 2px;
-	height: 2px;
+	height: 4px;
 }
 
 .content_container::-webkit-scrollbar-thumb {
