@@ -66,7 +66,13 @@
 
 .content_container_wrapper {
 	display: flex;
+	justify-content: center;
 	/* margin: auto; */
 	gap: 30px;
+	width: 100%;
+}
+
+.profile_labResult,
+.diagnosisHistory_diagnosiList {
 	width: 100%;
 }
