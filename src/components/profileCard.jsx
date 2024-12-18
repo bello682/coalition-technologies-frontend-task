@@ -112,7 +112,7 @@ const ProfileCard = ({ profileInfoData }) => {
 			</div>
 
 			<button className="show-more-button" onClick={toggleShowMore}>
-				{showMore ? "Show Less" : "Show All Information"}
+				{showMore ? "Show Less Information" : "Show All Information"}
 			</button>
 		</div>
 	);

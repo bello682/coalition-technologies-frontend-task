@@ -66,5 +66,7 @@
 
 .content_container_wrapper {
 	display: flex;
+	justify-content: center;
+	margin: auto;
 	gap: 30px;
 }

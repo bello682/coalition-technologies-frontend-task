@@ -1,10 +1,11 @@
 .app-container {
 	height: 100vh;
 	margin-top: 2rem;
+	width: 100%;
 }
 
 .app-container-wrapper {
 	display: flex;
-	width: 90%;
+	width: 95%;
 	margin: auto;
 }
