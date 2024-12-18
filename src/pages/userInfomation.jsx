@@ -15,8 +15,6 @@ const Content = ({ userInfo }) => {
 						Diagnosis History
 					</h1>
 					<div>
-						<div>{/* chart */}</div>
-						<div>{/* total amount of chart */}</div>
 						<BloodPressureChart bloodPressureData_info={userInfo} />
 					</div>
 					<DiagnosisHistoryWealther

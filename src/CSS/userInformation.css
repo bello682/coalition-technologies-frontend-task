@@ -1,8 +1,8 @@
 .content {
-	flex: 1;
-	padding: 2rem;
-	background-color: #fff;
-	overflow-y: auto;
+	/* flex: 1; */
+	/* padding: 2rem; */
+	/* background-color: #fff; */
+	/* overflow-y: auto; */
 }
 
 .no-selection p {
@@ -66,10 +66,10 @@
 
 .content_container_wrapper {
 	display: flex;
-	justify-content: center;
+	/* justify-content: center; */
 	/* margin: auto; */
 	gap: 30px;
-	width: 100%;
+	/* width: 100%; */
 }
 
 .profile_labResult,
