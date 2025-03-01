@@ -5,6 +5,7 @@ import { IoSearch } from "react-icons/io5";
 const Sidebar = ({ users, onUserSelect, selectedUserId }) => {
 	const [searchInput, setSearchInput] = useState("");
 	const [openSearchInput, setOpenSearchInput] = useState(false);
+	// const [hide, setHide] = useState(true);
 
 	const toggleSearchInput = () => {
 		setOpenSearchInput((prevState) => !prevState);
@@ -21,47 +22,55 @@ const Sidebar = ({ users, onUserSelect, selectedUserId }) => {
 	};
 
 	return (
-		<aside className="sidebar">
-			<div className="sidebarWrapper">
-				<div className="search_patients">
-					<h2>Patients</h2>
-					<IoSearch className="search_icon" onClick={toggleSearchInput} />
-				</div>
-				{openSearchInput && (
-					<input
-						type="text"
-						placeholder="Search for patients..."
-						onChange={handleSearchChange}
-						className={`search_input ${openSearchInput ? "open" : ""}`}
-						value={searchInput}
-					/>
-				)}
-				<ul>
-					{filterInput(searchInput)?.map((user, index) => (
-						<li
-							key={index}
-							className={`user-item ${
-								selectedUserId === user.name ? "active" : ""
-							}`}
-							onClick={() => onUserSelect(user)}
-						>
-							<img
-								src={user.profile_picture}
-								alt={user.name}
-								className="w-[50px]"
-							/>
+		<>
+			{/* {hide && ( */}
 
-							<div className="checkmark">
-								{user.name} <br />
-								<span>
-									({user.gender}, {user.age})
-								</span>
-							</div>
-						</li>
-					))}
-				</ul>
-			</div>
-		</aside>
+			<aside className="sidebar">
+				<div className="sidebarWrapper">
+					<div className="search_patients">
+						<h2>Patients</h2>
+						<IoSearch className="search_icon" onClick={toggleSearchInput} />
+					</div>
+					{openSearchInput && (
+						<input
+							type="text"
+							placeholder="Search for patients..."
+							onChange={handleSearchChange}
+							className={`search_input ${openSearchInput ? "open" : ""}`}
+							value={searchInput}
+						/>
+					)}
+					<ul>
+						{filterInput(searchInput)?.map((user, index) => (
+							<li
+								key={index}
+								className={`user-item ${
+									selectedUserId === user.name ? "active" : ""
+								}`}
+								onClick={() => {
+									onUserSelect(user);
+									// setHide(false);
+								}}
+							>
+								<img
+									src={user.profile_picture}
+									alt={user.name}
+									className="w-[50px]"
+								/>
+
+								<div className="checkmark">
+									{user.name} <br />
+									<span>
+										({user.gender}, {user.age})
+									</span>
+								</div>
+							</li>
+						))}
+					</ul>
+				</div>
+			</aside>
+			{/* )} */}
+		</>
 	);
 };
 

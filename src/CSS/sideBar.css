@@ -93,3 +93,9 @@
 .checkmark {
 	color: black;
 }
+
+@media screen and (min-width: 768px) {
+	.sidebar {
+		width: 100% !important;
+	}
+}
